@@ -1,0 +1,42 @@
+
+.nametable{
+    background-color:black;
+    color: white;  
+    border-collapse: collapse 0.2px;
+    
+}
+.row00{
+    background: darkorange;
+    
+
+}
+.row01{
+    background: green;
+}
+.row02{
+    background: blue;
+}
+.row03{
+    background: yellow;
+}
+.row04{
+    background: rgb(165, 29, 29);
+}
+.row05{
+    background: purple;
+}
+.img{
+    border-radius: 25px;
+    height: 120px;
+    width: 115px;
+    object-fit: cover;
+    padding: 5px;
+}
+
+ table {
+    border-collapse: collapse;
+    border:1px solid #c7c7c7;
+}
+table tbody td {
+    border:1px solid white;
+} 

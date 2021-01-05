@@ -1,0 +1,17 @@
+.box{
+    width: 700px;
+}
+.img1{
+    width: 300px;
+    height: 500px;
+}
+.man, .manx{
+    width: 100px;
+    height: 115px;
+}
+.img1:hover ~div .man:nth-child(2n+1){
+    visibility: hidden;
+} 
+.img1:hover~div .manx:nth-child(2n){
+    visibility: hidden;
+} 

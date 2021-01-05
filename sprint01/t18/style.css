@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+form{
+    display: flex;
+    /* центрирование кнопки */
+    align-items: center;
+}
+input{
+    flex-grow: 1;
+    height: 35px;
+}
+button{
+    height: 30px;
+}

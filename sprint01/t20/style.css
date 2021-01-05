@@ -1,0 +1,33 @@
+.content__circle{
+    background-color: green;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    margin-top: 150px;
+    position: relative;
+    animation-name: green-circle;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+body{
+    background-color: orange;
+    width: 90%;
+}
+@keyframes green-circle{
+    0%{
+      left: 0%;
+    }
+    50%{
+     
+    }
+    100%{
+      left: 100%;
+    }
+}
+.content__circle:hover{
+    background-color: red;
+    transition: 2s;
+}

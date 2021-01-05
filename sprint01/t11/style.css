@@ -1,0 +1,23 @@
+.date{
+    font-family: 'Lato';
+    font-weight: 700;
+    size: 2em;
+    background-color: #0097B9;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    display: inline-block; 
+     text-align: center;
+    
+}
+.temp{
+    font-family: 'Lato';
+    font-weight: 400;
+    size: 2em;
+}
+.card:hover{
+    box-shadow: 0 0 7px black;
+}

@@ -1,0 +1,12 @@
+.image{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 25%;
+}
+img:hover{
+    transform: rotate(-30deg);
+}

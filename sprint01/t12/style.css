@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+.box{
+    position: relative;
+    padding: 15px 0 0 20px;
+    width: calc(100vw - 200px);
+    height: 50px;
+    background-color: lightgray;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    height: 98px;
+    width: calc(100vw - 202px);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    top: -25px;
+    left: -1px;
+}
+.box::after{
+    content: '';
+    position: absolute;
+    height: 48px;
+    width: calc(100vw - 150px);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    top: -1px;
+    right: -25px;
+}

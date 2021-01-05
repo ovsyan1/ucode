@@ -1,0 +1,59 @@
+h1{
+    color: #fa2372;
+}
+h2{
+    text-align: center;
+    color: gray;
+    font-size: 40px;
+}
+.box > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 20px;
+}
+label{
+    border: 1px solid gray;
+    border-radius: 30px;
+    color: gray;
+    text-align: center;
+    width: 240px;
+    padding: 20px;
+    margin: 20px;
+}
+input[type=checkbox]{
+    position: absolute;
+    visibility: hidden;
+}
+input[type=checkbox]:checked + label{
+    border:1px solid rgb(16, 37, 99);
+    background-color: rgb(16, 37, 99);
+    color: white;    
+}
+input[type="checkbox"]:checked + label::after{
+    content: '\2713';
+    color: white;
+    padding-left: 20px;
+    }
+input[type="text"]{
+    border: none;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 20px;
+}
+button{
+    background-color: rgb(242, 118, 118);
+    width: 100%;
+    padding: 30px;
+    border: none;
+    color: white;
+}
+button:hover{
+    transition: 1s;
+    background-color: rgb(16, 37, 99);
+}

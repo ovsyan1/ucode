@@ -1,0 +1,12 @@
+
+@media screen{
+img{
+    float: left;
+    margin:10px;
+}
+}
+@media print{
+img{
+        float: none;
+}
+}

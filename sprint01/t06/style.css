@@ -1,0 +1,15 @@
+h1{
+    height: 150px;
+    background-color: red;
+    font-family: Arial;
+    font-weight: bold;
+    position: relative;
+}
+span{
+    color: #ffffff;
+    position: absolute;
+    font-size: 4em;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -30px;
+}

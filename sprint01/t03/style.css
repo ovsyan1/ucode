@@ -1,0 +1,22 @@
+.inp{
+    width: 45%;
+    height: 2em;
+    border: 2px solid blue;
+    border-radius: 3px;  
+    color: chartreuse;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.inp:hover {
+color: red;
+}
+.butt{
+color: green;
+height: 2em;
+width: auto;
+font-size: 16.5px;
+}
+.butt:hover{
+    color: red;    
+}

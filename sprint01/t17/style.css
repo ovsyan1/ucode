@@ -1,0 +1,53 @@
+header, h3{
+    text-align: center;
+}
+.card{
+    border: 1px solid grey;
+    margin: 10px;
+    width: 270px;
+    height: 160px;
+    padding: 0.5px;
+    text-align: left;
+    
+}
+.box{
+    display: flex;
+    flex-wrap: wrap; 
+}
+@media screen and (max-width:1024px){
+    body{ max-width: 1000px;}
+    .card{
+        border: 1px solid grey;
+        width: 180px;
+        height: 120px;
+        font-size: 11px;
+        padding: 2px;
+    }
+    .box{
+        display: flex;
+        flex-wrap: nowrap;
+        
+    }   
+}
+@media screen and (max-width:768px){
+    body{ max-width: 760px;}
+    .card{
+        border: 1px solid grey;
+        width: 330px;
+        height: 105px;
+        padding: 10px;
+        font-size: 11.5px;
+    }
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.par{
+    font-weight: 200;
+    padding: 3px;
+    
+}
+input{
+    color: blue;
+}

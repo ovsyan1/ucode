@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+header{
+    height: 44px;
+    background: #000;
+}
+.menu{
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    overflow: hidden;
+}
+.menu ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul li{
+    list-style: none;
+}
+menu ul li,
+.menu ul li a {
+    color: #fff;
+    line-height: 44px;
+    text-decoration: none;
+}
+.menu ul li .fa.fa-apple{
+    font-size: 20px;
+}
+.box-filter{
+    height: 700px;
+    width: 300px;
+    background-color: black;
+    color: white;
+}
+.box-filter h2{
+    text-align: center;
+}
+img{
+    width: 250px;
+    border-radius: 5px;
+}
+.img-box{
+    /* border: 1px solid black; */
+    width: 1250px;
+    display: flex;
+    flex-wrap: non-wrap;
+    text-align: center;
+    margin: 2px;
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.img1{
+    /* border: 1px solid black; */
+    width: 300px;
+    height: 340px;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+.add-button{
+    width: 100px;
+}
+.big-img{
+    height: 145px;
+    margin: 5px;
+}
+.only-img{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*------- CART PAGE --------- */
+#box{
+    background-color: brown;
+    width: 600px;
+    max-width: 80%;
+    border-radius: 5px;
+    border: 3px solid black;
+    /* height: 200px; */
+    position: absolute; 
+}
+#box{
+   background-color: white;
+}
+.box-button{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+.button-basket{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-weight: 900;
+    font-size: 17px;
+}
+.button-basket:hover{
+    color: red;
+}
+.clear-button{
+    width: 85px;
+    height: 20px;
+}
+.box-button-clear{
+display: flex;
+justify-content: flex-end;
+padding: 10px;
+}
+.propusk{
+    height: 25px;
+}

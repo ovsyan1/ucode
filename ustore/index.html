@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kyrylo Ovsiannik">
+    <link rel="shorctcut icon" href="assets/favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Shop | Console-Game </title>
+</head>
+
+<body>
+    <section>
+        <header>
+            <div class="menu">
+                <ul>
+                    <li><a href="#"><i class="fa fa-apple"></i></a></li>
+                    <li><a href="#" class="menu-item">About</a></li>
+                    <li><a href="#" class="menu-item">Menu</a></li>
+                    <li><a href="#" class="menu-item">Contact</a></li>
+                    <li><a href="#" class="menu-item"><i class="fa fa-search"></i></a></li>
+                    <li><a href="tel: +380939750744">+380939750744</a></li>
+                    <li class="basket-block"><a href="#" class="menu-item" onclick="openBox(); return false"><i
+                                data-modal-target="#modal" class="fa fa-shopping-basket" id="basket"> 0</i></a>
+                    </li>
+
+        </header>
+        <div class="box-container">
+            <div id="box" class="box" style="display: none;">
+                <div class="elements">
+                    <div class="box-button" id="box-button">Close<button class="button-basket"
+                            id="close-button">X</button></div>
+                </div>
+                <div id="new-screen">
+                    <h3>No items in the cart</h3>
+                    <div class="full-items" id="full-items"></div>
+                    <div class="total-price">Total price: 0$</div>
+                </div>
+            </div>
+            <div class="img-box">
+                <div class="box-filter">
+                    <h2>Filters</h2>
+                    <p>Avaliable</p>
+                </div>
+                <div class="only-img">
+                    <div class="img1">
+                        <img src="assets/nintendo-shoot.jpg" alt="nintendo-shoot">
+                        <h3>Nintendo shoot</h3>
+                        <h3>Old School</h3>
+                        <p>200$</p>
+                        <input class="add-button" type="button" value="Add to card">
+                    </div>
+                    <div class="img1">
+                        <img src="assets/nintendo-switch.jpg" alt="nintendo-switch" class="big-img">
+                        <h3>Nintendo Switch</h3>
+                        <h3>Old School</h3>
+                        <p>450$</p>
+                        <input class="add-button" type="button" value="Add to card">
+                    </div>
+                    <div class="img1">
+                        <img src="assets/psp.jpg" alt="PSP">
+                        <h3>PSP</h3>
+                        <h3>Old School</h3>
+                        <p>175$</p>
+                        <input class="add-button" type="button" value="Add to card">
+                    </div>
+                    <div class="img1">
+                        <img src="assets/psvita.jpg" alt="PS-Vita">
+                        <h3>PS-VITA</h3>
+                        <h3>Old School</h3>
+                        <p>220$</p>
+                        <input class="add-button" type="button" value="Add to card">
+                    </div>
+                    <div class="img1">
+                        <img src="assets/sega.jpg" alt="Sega">
+                        <h3>SEGA</h3>
+                        <h3>Old School</h3>
+                        <p>80$</p>
+                        <input class="add-button" type="button" value="Add to card">
+                    </div>
+                    <div class="img1">
+                        <img src="assets/super-nintendo.jpg" alt="Super Nintendo" class="big-img">
+                        <h3>Super-Nintendo</h3>
+                        <h3>Old School</h3>
+                        <p>100$</p>
+                        <input class="add-button" type="button" value="Add to card">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

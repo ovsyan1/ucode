@@ -1,0 +1,37 @@
+main{
+    display: block;
+}
+body{
+    position: relative;
+}
+#notification{
+    background-color: grey;
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#placeholder{
+    display: flex;
+    justify-content: center;
+}
+ td, th{
+    padding: 10px;
+    text-align: center;
+    width: 33.33%;
+}
+table{
+    width:  300px;
+    border: 4px solid black;
+    border-collapse: inherit;
+}
+th{
+    background-color: red;
+    cursor: pointer;
+}
+td{
+    background-color: rgb(194, 194, 194);
+}

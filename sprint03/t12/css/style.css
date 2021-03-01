@@ -1,0 +1,43 @@
+textarea{
+    margin: 5px;
+    border-radius: 5px;
+    border-color: yellowgreen;
+}
+.add{
+    background-color: cadetblue;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+    margin-left: 7px;
+}
+.clear{
+    background-color: lightgray;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 248px;
+    width: 120px;
+}
+.text-box{
+    background-color: lightgray;
+    width: 485px;
+    height: 220px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+   text-align: center;
+} 
+.notes-box{
+    width: 485px;
+    height: 175px;
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+}

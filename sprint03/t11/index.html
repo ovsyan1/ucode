@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <form name="myForm">
+        <div class="box">
+            <input class="add" type="button" value="Add to cookies" onclick="clicked()" />
+            <input class="clear" type="reset" value="Clear cookies" onclick="deleteCookies()">
+            <div class="text-box">
+                <p>Enter cookie info:</p>
+                <textarea name="name" id="text" cols="55" rows="10"></textarea>
+            </div>
+            <div class="notes-box">
+                <p>Notes archive:</p>
+                <textarea type="text" id="note" cols="55" rows="7" placeholder="[Empty]"></textarea>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

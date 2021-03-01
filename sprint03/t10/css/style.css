@@ -1,0 +1,53 @@
+.container{
+    background-color: lightgrey;
+    margin-top: 0;
+    width: 40%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider{
+    width: 234px;
+    height: 246px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.slider-line{
+    height: 248px;
+    width: 928px;
+    display: flex;
+    position: relative;
+    left: 0;/*для коректной работы transition*/
+    transition: all ease 1s;
+}
+.slider-prev{
+    background-color: black;
+    color: white;
+    margin-left: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 30px;
+    justify-content: center;
+}
+
+.slider-next{
+    display: flex;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    width: 30px;
+    justify-content: center;
+}
+button:hover{
+    background-color: red;
+    text-decoration: none;
+}
+img{
+    width: 220px;
+    height: 235px;
+    padding: 5px;
+}

@@ -1,30 +1,44 @@
-// const filterBox = document.querySelectorAll('.tr-box');
-// document.querySelector('.box-filter').addEventListener('click', (event)=>{
-// if(event.target.tagName !== 'LI') return false;//защита от клика ммимо элемента li
-// let filterClass = event.target.dataset['data-f']
-// console.log(filterClass)
-// });
+const priceBlock = document.getElementById('price');
+const cheapest = document.createElement('button');
+const mostExpensive = document.createElement('button');
+const randomButton = document.createElement('button');
+const allItems = document.createElement('button');
 
-// function sortByPrice(arr){
-//        arr.sort(function (a, b) {
-//           return a.price - b.price
-//       });
-//   return  console.log(sortByPrice(products))
-// }
-function sortByPrice(arr){
+priceBlock.appendChild(allItems);
+priceBlock.appendChild(cheapest);
+priceBlock.appendChild(mostExpensive);
+priceBlock.appendChild(randomButton);
+cheapest.innerHTML = `Cheapest`;
+mostExpensive.innerHTML = `Most Expensive`;
+randomButton.innerHTML = `Random`;
+allItems.innerHTML = `All products`
+
+function sortByCheapest(arr){
        arr.sort((a, b) => a.price > b.price ? 1 : -1)
-       showPage(products[0])
+       showPage(items[0]);
 }
+function sortByExpensive(arr){
+       arr.sort((a, b) => a.price < b.price ? 1 : -1)
+       showPage(items[0]);
+}
+function allProducts(){
+       location.reload()
+       showPage(items[0])
+}
+// function randomSort(arr){
+//        arr([Math.floor(Math.random() * products.length)]);
+//        showPage(items[0]);
+// }
 
-// sortByPrice(products)
-
-const navBlock = document.getElementById('box-filter');
-console.log(navBlock)
-
-
-const price = document.createElement('button');
-
-navBlock.appendChild(price)
-price.innerHTML = `Price`
-
-price.addEventListener('click', showPage());
+cheapest.addEventListener('click',() => { 
+       sortByCheapest(products);
+});
+mostExpensive.addEventListener('click',() =>{
+       sortByExpensive(products)
+});
+allItems.addEventListener('click',() =>{
+allProducts()
+})
+// randomButton.addEventListener('click', () =>{
+//        randomSort(products)
+// });

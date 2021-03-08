@@ -27,11 +27,9 @@ function getPaginate() {
     prevButtonPag.addEventListener('click', prevPage)
     for (let i = 1; i <= countOfItems; i++) {
         let li = document.createElement('li');
-        
         if(i === 1) {
             li.classList.add('active');
         }
-        // li.setAttribute('id', i)
         li.innerHTML = i;
         pagination.appendChild(li);
         arr.push(li)
@@ -96,9 +94,11 @@ if(currentPage == countOfItems){
         let i = 0;
         createCell(`<img class="img-js" src="${note.img}" alt=${note.tag} >`, div)
         createCell(note.name, div)
-        createCell(`Price: ${note.price}`, div)
-        createCell(note.available, div)
         createCell(note.title, div)
+        createCell(note.productDescription, div)
+        createCell(note.brandOfProduct, div)
+        createCell(`Price: ${note.price}`, div)
+        createCell(note.availableName, div)
         createCell(`<button id="add-button" onclick="addItems(${note.id})"` + '">Add to cart', div)
         i++;
     }

@@ -2,9 +2,14 @@ let carts = document.querySelectorAll('#add-button');
 let basket = document.querySelector('#basket');
 
 function addItems(a) {
-    cartNumbers(products[a]);//закидываем в корзину items
-    totalCost(products[a]);
+    if(products[a].available == true){
+        cartNumbers(products[a]);//закидываем в корзину items
+        totalCost(products[a]);
+    }else alert('SOLD OUT, please choose another product.')
 }
+console.log(products[0].available)
+
+
 
 //------После перезагрузки страницы, счётчик остается с количеством товаров внутри корзины--------/
 function onLoadCartNumbers() {
@@ -36,7 +41,7 @@ function setItems(product) {
     if (cartItems !== null) {//если что-то есть в корзине += один продукт
         if (cartItems[product.tag] == undefined) {
             cartItems = {
-                ...cartItems,
+                ...cartItems,//копирование объекта
                 [product.tag]: product
             }
         }

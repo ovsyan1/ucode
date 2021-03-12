@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kyrylo Ovsiannik shop">
+    <meta name="author" content="Kyrylo Ovsiannik">
+    <link rel="shorctcut icon" href="assets/favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <title>Shop | Console-Game </title>
+
+</head>
+
+<body>
+    <section>
+        <header>
+            <input id="nav-toggle" type="checkbox">
+            <div class="logo">MINZ<strong>CODE</strong></div>
+            <ul class="links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#search" class="menu-item"><i class="fa fa-search" id="search"></i></a></li>
+                <li><a href="tel: +380939750744">+380939750744</a></li>
+                <li class="basket-block"><a href="#" class="menu-item" id="menu-item"
+                        onclick="openBox(); return false"><i data-modal-target="#modal" class="fa fa-shopping-basket"
+                            id="basket"> 0</i></a>
+                </li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line-box">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </label>
+        </header>
+        <div class="slider">
+            <div class="slider-line">
+                <img src="assets/slider1.jpg" alt="slider1">
+                <img src="assets/slider2.jpg" alt="slider2">
+                <img src="assets/slider3.jpg" alt="slider3">
+                <img src="assets/slider4.jpg" alt="slider4">
+                <img src="assets/slider5.jpg" alt="slider5">
+                <img src="assets/slider6.jpg" alt="slider6">
+                <img src="assets/slider7.jpg" alt="slider7">
+            </div>
+        </div>
+        <h2 class="h2-smaller">Filters</h2>
+        <div class="container-smaller-box-filter">
+            <div id="smaller-box-filter">
+                
+            <div>Avaliable<input type="radio" id="check-available" name="Unknown"></div>
+            <div>Not Avaliable<input type="radio" id="check-not-available" name="Unknown"></div>
+            </div>
+        </div>
+        <div class="box-container">
+            <div id="box" class="box" style="display: none;">
+                <div class="elements">
+                    <div class="box-button" id="box-button">Close<button class="button-basket"
+                            id="close-button">X</button></div>
+                </div>
+                <div id="new-screen">
+                    <h3>No items in the cart</h3>
+                    <div class="full-items" id="full-items"></div>
+                    <div class="total-price">Total price: 0$</div>
+                </div>
+            </div>
+            <div class="img-box">
+                <nav class="box-filter" id="box-filter" style="display: none;">
+                    <h2 class="h2">Filters</h2>
+                    <div>Avaliable<input type="radio" id="check-available" name="Unknown"></div>
+                    <div>Not Avaliable<input type="radio" id="check-not-available" name="Unknown"></div>
+                    <div id="price"></div>
+                </nav>
+                <div class="only-img">
+                    <div id="itemsBox"></div>
+                </div>
+            </div>
+        </div>
+        <div class="only-img" id="pagination"></div>
+    </section>
+    <footer>
+        <div class="footer-box">
+            <div class="social-icons">
+                <a href="https://uk-ua.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/zelenskyyua" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ovsyan1/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/?gl=UA&hl=ru" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="copyright">© 2021 | Kyrylo Ovsiannik | Ucode</div>
+    </footer>
+    <script src="js/arr.js"></script>
+    <script src="js/pagination.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/sorting.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

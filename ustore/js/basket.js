@@ -1,16 +1,9 @@
-let carts = document.querySelectorAll('#add-button');
-let basket = document.querySelector('#basket');
-
 function addItems(a) {
     if(products[a].available == true){
         cartNumbers(products[a]);//закидываем в корзину items
         totalCost(products[a]);
     }else alert('SOLD OUT, please choose another product.')
 }
-console.log(products[0].available)
-
-
-
 //------После перезагрузки страницы, счётчик остается с количеством товаров внутри корзины--------/
 function onLoadCartNumbers() {
     let productNumbers = localStorage.getItem('cartNumbers')
@@ -19,7 +12,6 @@ function onLoadCartNumbers() {
         document.querySelector('#basket').textContent = productNumbers;//чтобы количество в корзине смотрело и давало ответ из localStorage
     }
 }
-
 function cartNumbers(product) {
     let productNumbers = localStorage.getItem('cartNumbers')
 
@@ -34,8 +26,7 @@ function cartNumbers(product) {
     }
     setItems(product);
 }
-
-function setItems(product) {
+function setItems(product){
     let cartItems = localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);//сделать с обычного JSON объекта джаваскриптовый
     if (cartItems !== null) {//если что-то есть в корзине += один продукт
@@ -95,11 +86,7 @@ function displayCart() {
     }
 
 }
-
-onLoadCartNumbers();
-displayCart();
 /*------------------show cart onclick-----------------------*/
-
 function openBox() {
     let display = document.getElementById('box').style.display;
     let closeBasket = document.getElementById('close-button');

@@ -1,0 +1,117 @@
+.sy {
+    width: 100%;
+    display: flex;
+    margin: 0px auto;
+}
+.toggle {
+    background-color: red;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 3px;
+    margin: 8px;
+    color: white;
+    cursor: pointer;
+}
+.wrap {
+    z-index: 5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    width: 370px;
+    height: 450px;
+    font-size: 2em;
+    outline: none;
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 5px;
+    font-family: "Roboto Mono", monospace;
+    background-color: white;
+    transition: 0.4s;
+}
+.advance {
+    position: relative;
+    top: -458px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+    width: 130px;
+    height: 450px;
+    font-size: 2em;
+    outline: none;
+    border: 1px solid black;
+    border-right: 0px;
+    padding: 3px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: "Roboto Mono", monospace;
+    background-color: white;
+}
+.conteiner {
+    z-index: 5;
+    grid-column: 1/-1;
+    grid-row: 1/ 3;
+    border: 1px solid #ebebeb;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 5px;
+}
+#inp {
+    grid-row: 1/2;
+    text-align: right;
+    outline: none;
+    font-size: larger;
+    outline: none;
+    border: none;
+    width: 98%;
+}
+#out {
+    grid-column: 1/-1;
+    text-align: right;
+    font-size: large;
+    color: silver;
+    outline: none;
+    border: none;
+    width: 98%;
+}
+.btn {
+    z-index: 5;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f1f3f4;
+    height: 45px;
+}
+.btnAdv {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f1f3f4;
+    height: 45px;
+    width: 110px;
+}
+.btn:hover {
+    font-weight: 900;
+    transition: 0.1s;
+}
+.deleted {
+    grid-column: 2/4;
+}
+
+.zero {
+    grid-column: 1/2;
+}
+.dot {
+    grid-column: 2/3;
+}
+.equal {
+    grid-column: 3/-1;
+    background-color: #4285f4;
+    color: white;
+    font-weight: bold;
+}

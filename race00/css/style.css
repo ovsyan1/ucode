@@ -1,0 +1,29 @@
+.switch-skins {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 15px;
+    color: grey;
+}
+.skin-switcher {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #5a8de1;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.skin-switcher.active {
+    background: #e32a1b;
+}
+.skin-title {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.sub-index{
+    margin-top: -15px;
+}
